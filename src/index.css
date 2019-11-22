@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@font-face {
+  font-family: 'RRPioneer-Bold';
+  src:url('./assets/rr-fonts/RRPioneer-Bold-v1.006.ttf')
+}
+@font-face {
+  font-family: 'RRPioneer-Medium';
+  src:url('./assets/rr-fonts/RRPioneer-Medium-v1.006.ttf')
+}
+@font-face {
+  font-family: 'RRPioneer-Regular';
+  src:url('./assets/rr-fonts/RRPioneer-Regular-v1.006.ttf')
+}
+@font-face {
+  font-family: 'RRPioneer-UltraLightCondensed';
+  src:url('./assets/rr-fonts/RRPioneer-UltraLightCondensed-v1.006.ttf')
+}

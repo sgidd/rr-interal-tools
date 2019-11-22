@@ -1,0 +1,39 @@
+.abc {
+    display: flex;
+    flex-direction: row;
+}
+
+.dataLabsTitle{
+    margin-left: 15px;
+    vertical-align: middle;
+    padding-top: 24px;
+}
+
+.data {
+    padding: 0px;
+    margin: 0px;
+    font-size: 21px;
+    color: #006dff;
+}
+
+.labs{
+    padding: 0px;
+    margin: 0px;
+    font-size: 21px;
+    color: #006dff
+}
+
+
+.bg{
+    background-image : url("../../assets/imgs/bg/login_bg.jpg") ;
+    height: 100vh;
+    top:0;
+    left:0;
+  /* Center and scale the image nicely */
+   background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size:100% 100%;
+  z-index:-100;
+  padding-top: 100px;
+}
