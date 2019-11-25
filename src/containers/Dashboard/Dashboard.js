@@ -8,10 +8,10 @@ class Dashboard extends Component {
     render(){
 
         return(
-           <React.Fragment>
-                <MenuAppBar />
+           <div style={{backgroundColor:'#eee',minHeight:'100vh',maxHeight:'100%'}}>
+                <MenuAppBar logout = {this.props.logout}/>
                 <Main />
-           </React.Fragment>
+           </div>
         );
     }
 }

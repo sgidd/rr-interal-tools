@@ -51,11 +51,12 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function SignIn() {
+const SignIn = (props) => {
   const classes = useStyles();
 
   return (
-    <Container component="main" maxWidth="xs" >
+    <Container  maxWidth="xs" >
+      {/* <Container component="main" maxWidth="xs" ></Container> */}
       <CssBaseline />
       <div className={classes.paper}>
         <Avatar className={classes.avatar}>
@@ -92,12 +93,13 @@ export default function SignIn() {
             label="Remember me"
           />
           <Button
-            type="submit"
+            type="button"
             fullWidth
             variant="contained"
             //  color="white"
             className={classes.submit}
             style = { {backgroundColor :'#10069f',color :'white', height:'50px'}} 
+            onClick={props.isLoggedIn}
           >
               
             Log In
@@ -122,3 +124,5 @@ export default function SignIn() {
     </Container>
   );
 }
+
+export default SignIn;

@@ -10,6 +10,8 @@ import SettingsIcon from '@material-ui/icons/Settings';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import FadeMenu from '../UIComponents/Menu/Menu';
+import { Link } from 'react-router-dom';
+import { getThemeProps } from '@material-ui/styles';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -35,7 +37,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function MenuAppBar() {
+const  MenuAppBar = (props) => {
   const classes = useStyles();
   const [auth, setAuth] = React.useState(true);
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -110,7 +112,10 @@ export default function MenuAppBar() {
               >
                 
                 <MenuItem onClick={handleClose} className = {classes.menuItem}>Profile</MenuItem>
-                <MenuItem onClick={handleClose} className = {classes.menuItem}>My account</MenuItem>
+                <MenuItem onClick={handleClose} className = {classes.menuItem} >My account</MenuItem>
+                <MenuItem onClick={handleClose} className = {classes.menuItem}>
+                <Link to="/signin" style={{textDecoration:'none'}} onClick= {props.logout}>Logout</Link>
+                </MenuItem>
               </Menu>
               
             </div>
@@ -121,3 +126,5 @@ export default function MenuAppBar() {
     </div>
   );
 }
+
+export default MenuAppBar;
